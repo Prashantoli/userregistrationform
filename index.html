@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> User Login and Registration</title>
+    </head>
+    <body>
+        <form method="post" name="login" action="">
+            <fieldset>
+                <legend>login</legend>
+            <input type="text" name="username" placeholder="username" required>
+            <input type="password" name="password" placeholder="password" required>
+            <input type="submit" name="login" value="login">
+        </fieldset>
+        </form>
+        <form method="post" name="register" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend> user registration</legend>
+                <label> username :</label>
+                <input type="text" name="username" required>
+                <br>
+                <label> password :</label>
+                <input type="password" name="password" required>
+                <br>
+                <label> Email :</label>
+                <input type="Email" name="email" required>
+                <br> 
+                <label> Gender:</label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+                <input type="radio" name="gender" value="others">others
+                <br>
+                <label>DOB:</label>
+                <input type="data" name="dob">
+                <br>
+                <label>District:</label>
+                <select size="1" name="District">
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur"selected>Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="others">others</option>
+            </select>
+            <br>
+            <label>Course :</label>
+            <input type="checkbox" name="course[]" value="php" checked>php
+            <input type="checkbox" name="course[]" value="java" >java
+            <input type="checkbox" name="course[]" value="asp" >asp
+            <br>
+            <label>Photo :</label>
+            <input type="file" name="photo">
+            <br>
+            <label>Message :</label>
+            <textarea name="message" rows="8" cols="50">
